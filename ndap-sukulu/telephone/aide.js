@@ -138,6 +138,7 @@
     BADGES,
     { id: "attestations", titre: "Accepter et imprimer une attestation de module",
       html: "<p>Un module est une partie du livre. L'attestation est acquise quand toutes les évaluations du module sont remises, fiches et labs, avec une moyenne d'au moins 70 %, en retenant votre meilleur essai.</p>" +
+        note("Formation à parcours", "Dans certaines formations continues, chaque compte suit le parcours de son atelier. Toute la formation reste ouverte, mais seuls les chapitres du parcours comptent pour les badges. Le document s'appelle alors certificat de parcours validé. Il demande que chaque chapitre du parcours soit validé à 60 % et que la moyenne atteigne 70 %.") +
         ol(["Ouvrez le menu <strong>Mes attestations</strong>. Une attestation obtenue porte la mention « obtenue, à accepter ».",
             "Cliquez sur <strong>Accepter cette attestation</strong>, vérifiez votre nom, puis confirmez.",
             "Cliquez sur <strong>Afficher et imprimer</strong>, puis sur <strong>Imprimer ou enregistrer en PDF</strong>. Choisissez A4 paysage, marges « aucune », arrière-plans activés."]) +
