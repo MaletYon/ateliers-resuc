@@ -1,0 +1,9 @@
+# Dépôt public réduit au paquet chiffré, comme OPJ-APJ_Cyber.
+*
+!.gitignore
+!README.md
+!LICENSE.md
+!ndap-sukulu/
+!ndap-sukulu/**
+!verification/
+!verification/**
