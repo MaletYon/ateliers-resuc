@@ -21,6 +21,8 @@ Toute la formation reste ouverte. Seuls les chapitres du parcours comptent pour 
 |---|---|
 | En ligne | `https://maletyon.github.io/ateliers-resuc/ndap-sukulu/` |
 | Sur téléphone (fiches seulement) | `https://maletyon.github.io/ateliers-resuc/ndap-sukulu/telephone/` |
+| Adresse de secours, si `github.io` est bloqué par le réseau | `https://raw.githack.com/MaletYon/ateliers-resuc/main/ndap-sukulu/` |
+| Adresse de secours sur téléphone | `https://raw.githack.com/MaletYon/ateliers-resuc/main/ndap-sukulu/telephone/` |
 | Sans Internet | archive `ndap-sukulu/NDAP_SUKULU_RESUC_ordinateur.zip` |
 | Serveur du RESUC | même paquet déposé sur le serveur web du RESUC, lien depuis l'interface du SIG (voir `serveur/LISEZMOI.md`) |
 
