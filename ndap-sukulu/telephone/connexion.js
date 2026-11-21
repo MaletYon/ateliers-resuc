@@ -36,7 +36,7 @@
     window.NS_SCELLE = function (id, boite) { if (attente[id]) attente[id](boite); };
     function charger(rel) {
       return new Promise(function (ok, ko) {
-        attente[rel] = ok;
+        attente[rel.replace(/^(\.\.\/)+/, "")] = ok;   // le fichier scellé s'annonce sous « scelle/… », même appelé depuis telephone/
         var s = document.createElement("script");
         s.src = rel; s.onerror = ko;
         document.body.appendChild(s);
@@ -52,10 +52,10 @@
       var h = (a.getAttribute("href") || "").split("#"), rel = (D.fichiers_scelles || {})[h[0]];
       if (!rel) return;
       ev.preventDefault();
-      var pdf = /\.pdf$/i.test(h[0]);
+      var pdf = /\.pdf$/i.test(h[0]) && !a.hasAttribute("download");   // « download » : enregistrer au lieu d'ouvrir
       var fen = pdf ? window.open("about:blank", "_blank") : null;
       ouvrirFichier(rel).then(function (brut) {
-        var url = URL.createObjectURL(new Blob([brut], { type: pdf ? "application/pdf" : "application/octet-stream" }));
+        var url = URL.createObjectURL(new Blob([brut], { type: /\.pdf$/i.test(h[0]) ? "application/pdf" : "application/octet-stream" }));
         if (pdf) { fen.location = url + (h[1] ? "#" + h[1] : ""); return; }
         var t = document.createElement("a");
         t.href = url; t.download = h[0].split("/").pop();
@@ -72,7 +72,7 @@
       location.hash = "#/accueil"; location.reload();
     };
     var s = document.createElement("script");
-    s.src = C.mode === "evaluation" ? "eval.js?v=202611210127" : "app.js?v=202611210127";   // évaluation sans corrigé, ou révision
+    s.src = C.mode === "evaluation" ? "eval.js?v=202611210133" : "app.js?v=202611210133";   // évaluation sans corrigé, ou révision
     document.body.appendChild(s);
   }
 

@@ -177,7 +177,9 @@
             (der ? etiquetteStatut(der) : '<span class="doux">non commencée</span>') + '</td><td style="white-space:nowrap">' + bouton + "</td></tr>";
         }).join("") + "</tbody></table></div>";
     });
-    if (C.pdf) h += '<h2>Le cours</h2><div class="carte"><a href="' + esc(C.pdf) + '" target="_blank">Ouvrir le livre du cours (PDF)</a></div>';
+    if (C.pdf) { var lib = C.libelle_pdf || "le livre du cours";
+      h += '<h2>Le cours</h2><div class="carte"><div class="actions" style="margin-top:0"><a class="btn" href="' + esc(C.pdf) + '" target="_blank">Ouvrir ' + esc(lib) + ' (PDF)</a>' +
+        '<a class="btn second" href="' + esc(C.pdf) + '" download>Télécharger ' + esc(lib) + ' (PDF)</a></div></div>'; }
     cadre("accueil", h);
   }
 
