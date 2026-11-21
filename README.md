@@ -1,5 +1,9 @@
 # Ateliers RESUC · Sécurité du SIG-RESUC et protection des données
 
+<p><img src="ndap-sukulu/img/armoiries_logo.jpg" alt="Armoiries de la République du Cameroun" height="64"> <img src="ndap-sukulu/img/banque_mondiale_logo.png" alt="Logo de la Banque mondiale" height="64"></p>
+
+Coopération Cameroun - Banque mondiale
+
 Plateforme des ateliers de sensibilisation des utilisateurs du SIG du Registre social unifié du Cameroun (RESUC) : guides du participant, présentations par lieu et salle de classe NDAP SUKULU chiffrée, sur le modèle de la formation OPJ-APJ.
 
 Deux ateliers de deux jours, deux parcours sur la plateforme :
