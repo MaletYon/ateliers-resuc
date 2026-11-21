@@ -72,7 +72,7 @@
       location.hash = "#/accueil"; location.reload();
     };
     var s = document.createElement("script");
-    s.src = C.mode === "evaluation" ? "eval.js?v=202611210054" : "app.js?v=202611210054";   // évaluation sans corrigé, ou révision
+    s.src = C.mode === "evaluation" ? "eval.js?v=202611210127" : "app.js?v=202611210127";   // évaluation sans corrigé, ou révision
     document.body.appendChild(s);
   }
 

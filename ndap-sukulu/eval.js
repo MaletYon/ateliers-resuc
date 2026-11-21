@@ -177,7 +177,7 @@
             (der ? etiquetteStatut(der) : '<span class="doux">non commencée</span>') + '</td><td style="white-space:nowrap">' + bouton + "</td></tr>";
         }).join("") + "</tbody></table></div>";
     });
-    if (C.pdf && !TEL) h += '<h2>Le cours</h2><div class="carte"><a href="' + esc(C.pdf) + '" target="_blank">Ouvrir le livre du cours (PDF)</a></div>';
+    if (C.pdf) h += '<h2>Le cours</h2><div class="carte"><a href="' + esc(C.pdf) + '" target="_blank">Ouvrir le livre du cours (PDF)</a></div>';
     cadre("accueil", h);
   }
 
